@@ -1,0 +1,26 @@
+<channel
+   name="Athena adapter -asdf"
+   guid="2AA79D39ACB5C01C52CBFE19BD235F28"
+   description="This channel shows an example Athena Health web service adapter:&#xD;&#xA;&#xD;&#xA;http://help.interfaceware.com/forums/topic/athena-health-web-adapter&#xD;&#xA;&#xD;&#xA;"
+   start_automatically="true"
+   logging_level="1"
+   use_message_filter="false">
+   <to_mapper
+      guid="Athena_adapter_-asdf-To-2FvwooIwbBMaEt"
+      commit_id="d9b642f4712ced1dcff06339780d7c919859e425"
+      commit_comment="Import Translators: esrft">
+      <dequeue_list>
+         <dequeue
+            source_name="self"
+            dequeue_guid="F7859C8D372EFE74E5C49CB35B3429B1"/>
+      </dequeue_list>
+   </to_mapper>
+   <from_llp_listener
+      original_vmd_path=""
+      ack_vmd_path="/Applications/iNTERFACEWARE-Iguana.app/Contents/iNTERFACEWARE-Iguana/autoack.vmd"
+      port="7020"
+      connection_timeout="30"
+      unlimited_connection_timeout="false"
+      keep_vmd_updated="false"
+      ack_style="fast"/>
+</channel>
