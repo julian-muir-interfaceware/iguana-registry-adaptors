@@ -47,8 +47,4 @@ function main(Data)
    -- Note: Athenahealth Preview api does not provide delete patient api, uncomment line #45 to test create patient api
    local inboundMsg = json.parse{data=Data}
    --local new_patientId = patientApi.createNewPatient(api, inboundMsg)
-   
-   local R = patientApi.updatePatientAddress(api, practiceId, patientId, '10', 'Steele Street', 'New Jersey', '16427')
-   trace(R[1].patientid)
-   
 end
