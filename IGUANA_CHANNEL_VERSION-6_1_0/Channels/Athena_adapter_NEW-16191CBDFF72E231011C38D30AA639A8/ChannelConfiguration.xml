@@ -1,0 +1,26 @@
+<channel
+   name="Athena adapter NEW"
+   guid="16191CBDFF72E231011C38D30AA639A8"
+   description="This channel shows an example Athena Health web service adapter: http://help.interfaceware.com/forums/topic/athena-health-web-adapter"
+   start_automatically="false"
+   logging_level="1"
+   use_message_filter="false">
+   <to_mapper
+      guid="Athena_adapter_NEW-To-FMCKpkM80x0VdV"
+      commit_id="dec1f318d16d553d512087d334392690d2eacefa"
+      commit_comment="Removed line 51/52 and imported sample data message">
+      <dequeue_list>
+         <dequeue
+            source_name="self"
+            dequeue_guid="8C4F303DA6C2D73A36F945312C4EE64B"/>
+      </dequeue_list>
+   </to_mapper>
+   <from_llp_listener
+      original_vmd_path=""
+      ack_vmd_path="C:/Program Files/iNTERFACEWARE/Iguana/autoack.vmd"
+      port="7020"
+      connection_timeout="30"
+      unlimited_connection_timeout="false"
+      keep_vmd_updated="false"
+      ack_style="fast"/>
+</channel>
